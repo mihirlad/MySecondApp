@@ -1,0 +1,43 @@
+<h2>Add New User</h2>
+<form [formGroup]="addUserForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="firstName">First Name</label>
+    <input id="firstName" formControlName="FirstName" type="text" />
+  </div>
+
+  <div>
+    <label for="lastName">Last Name</label>
+    <input id="lastName" formControlName="LastName" type="text" />
+  </div>
+
+  <div>
+    <label for="emailId">Email</label>
+    <input id="emailId" formControlName="EmailId" type="email" />
+  </div>
+
+  <div>
+    <label for="username">Username</label>
+    <input id="username" formControlName="UserName" type="text" />
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input id="password" formControlName="UserPassword" type="password" />
+  </div>
+
+  <div>
+    <label for="role">Role</label>
+    <select id="role" formControlName="RoleId">
+      <option value="">--SELECT ROLE--</option>
+      <option *ngFor="let roles of RoleList" [value]="roles.roleId">{{roles.roleName}}</option>
+    </select>
+  </div>
+
+  <button type="submit" [disabled]="addUserForm.invalid">Add User</button>
+
+
+</form>
+
+<div *ngIf="errorMessage" class="alert">
+  {{errorMessage}}
+</div>

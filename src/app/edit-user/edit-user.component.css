@@ -1,0 +1,106 @@
+/* Container styles for centering and spacing */
+
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling for form groups (each input field) */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styles */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Input field styles */
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focused input styling */
+  input:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Disabled button styles */
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Button hover effect */
+  button:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  /* Error message for invalid input (optional) */
+  input.ng-invalid.ng-touched {
+    border-color: #dc3545;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+  }
+  

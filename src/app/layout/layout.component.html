@@ -1,0 +1,27 @@
+<div class="layout">
+  <!-- Header -->
+  <header>
+    <h3>Dashboard Header</h3>
+    <div class="content">
+      <button type="button" id="btnLogout" (click)="Logout()">Logout</button>
+    </div>
+  </header>
+  <nav class="sidebar">
+    <ul>
+      <li><a routerLink="/Dashboard/User">User List</a></li>
+      <li><a routerLink="/Dashboard/Role">Role</a></li>
+      <li><a (click)="Logout()">Logout</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <router-outlet></router-outlet> <!-- Child components will be loaded here -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Footer Content</p>
+  </footer>
+</div>
